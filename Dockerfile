@@ -2,6 +2,8 @@ FROM mediawiki:1.35.2
 
 LABEL org.opencontainers.image.source https://github.com/richteaman/media-wiki-image
 
+ENV wg_show_exception_details=
+
 RUN curl https://extdist.wmflabs.org/dist/extensions/MsUpload-REL1_36-d0a0667.tar.gz -o MsUpload.tar.gz && \
     tar -xzf MsUpload.tar.gz -C extensions && \
     rm MsUpload.tar.gz && \

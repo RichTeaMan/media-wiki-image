@@ -182,3 +182,4 @@ $wgMSU_useDragDrop = true;
 $mgMSU_confirmReplace = true;
 
 $wgMaxUploadSize = 1024 * 1024 * 1024 * 1; // 1 GB
+$wgShowExceptionDetails = getenv('wg_show_exception_details') ? true : false;
