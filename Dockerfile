@@ -18,3 +18,4 @@ RUN curl https://extdist.wmflabs.org/dist/extensions/intersection-REL1_36-789511
     chown www-data:www-data extensions/intersection -R
 
 COPY wiki.ini /usr/local/etc/php/conf.d/wiki.ini
+COPY LocalSettings.php LocalSettings.php
